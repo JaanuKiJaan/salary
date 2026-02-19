@@ -14,8 +14,8 @@ import joblib
 
 @st.cache_resource
 def load_model_and_encoder():
-    model_path = "salary_prediction_model (2).pkl"
-    encoder_path = "label_encoder (1).pkl"
+    model_path = "salary_prediction_model.pkl"
+    encoder_path = "label_encoder.pkl"
     try:
         model = joblib.load(model_path)
         encoder = joblib.load(encoder_path)
